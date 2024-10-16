@@ -21,7 +21,6 @@ const HomeScreen = () => {
     const newCharacter = id
       ? await getCharacterByID(id)
       : await getRandomCharacter();
-    console.log(newCharacter);
     setCharacter(newCharacter);
     setRefreshing(false);
   };
